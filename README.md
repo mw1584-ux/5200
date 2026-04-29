@@ -17,4 +17,4 @@ Five visualization outputs were produced: two static multi-panel figures using m
 See Project Website for additional commentary <sub> 
 
 <sub> Note: 
-For details for the construction of the page itself please refer to the main branch 
+For details for the construction of the page itself please refer to the master branch 
