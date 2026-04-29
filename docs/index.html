@@ -1,0 +1,881 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.7.32">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>The Unraveling</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+.display.math{display: block; text-align: center; margin: 0.5rem auto;}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-html/tabby.min.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/light-border.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-html-435ba6093e6f0817aa7405139811e7b1.min.css" rel="stylesheet" append-hash="true" data-mode="light">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<style>html{ scroll-behavior: smooth; }</style>
+
+
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+
+<header id="title-block-header">
+<h1 class="title">The Unraveling</h1>
+
+</header>
+
+<nav id="TOC" role="doc-toc">
+    <h2 id="toc-title">Contents</h2>
+   
+  <ul>
+  <li><a href="#introduction" id="toc-introduction">Introduction</a></li>
+  <li><a href="#the-1992-convergence" id="toc-the-1992-convergence">The 1992 Convergence</a></li>
+  <li><a href="#social-infrastructure-infographic" id="toc-social-infrastructure-infographic">Social Infrastructure Infographic</a></li>
+  <li><a href="#social-connection-and-support-systems" id="toc-social-connection-and-support-systems">Social Connection and Support Systems</a></li>
+  <li><a href="#isolation-dating-markets-and-reactionary-violence" id="toc-isolation-dating-markets-and-reactionary-violence">Isolation, Dating Markets, and Reactionary Violence</a></li>
+  <li><a href="#declining-birth-rates-and-the-partnership-calculus" id="toc-declining-birth-rates-and-the-partnership-calculus">Declining Birth Rates and the Partnership Calculus</a></li>
+  <li><a href="#legislative-shifts-and-gender-based-antagonism" id="toc-legislative-shifts-and-gender-based-antagonism">Legislative Shifts and Gender-Based Antagonism</a></li>
+  <li><a href="#analysis-does-the-data-support-the-narrative" id="toc-analysis-does-the-data-support-the-narrative">Analysis: Does the Data Support the Narrative?</a></li>
+  <li><a href="#covid-19-dobbs-and-compounding-crises" id="toc-covid-19-dobbs-and-compounding-crises">COVID-19, Dobbs, and Compounding Crises</a></li>
+  <li><a href="#conclusion" id="toc-conclusion">Conclusion</a></li>
+  <li><a href="#appendix-technical-methods" id="toc-appendix-technical-methods">Appendix: Technical Methods</a></li>
+  <li><a href="#ai-usage-log" id="toc-ai-usage-log">AI Usage Log</a></li>
+  </ul>
+</nav>
+<div class="site-hero">
+  <div class="eyebrow">A Thirty-Year Analysis · 1992–2026</div>
+  <h1>The <em>Unraveling</em></h1>
+  <p class="subtitle">Male loneliness, gender-based violence, declining birth rates, and the collapse of social connection in America.</p>
+  <div class="meta-row">
+    <span>Temporal Scope: 1992–2026</span>
+    <span>Data: CDC · FBI · BJS · VPC · OWID</span>
+    <span>Framework: Causal Inference + DV Ecosystem</span>
+  </div>
+</div>
+
+<div class="causal-chain">
+  <div class="chain-node node-clay">Economic<br>Precarity</div>
+  <div class="chain-arrow">→</div>
+  <div class="chain-node node-slate">Threatened<br>Masculinity</div>
+  <div class="chain-arrow">→</div>
+  <div class="chain-node node-sage">Social<br>Isolation</div>
+  <div class="chain-arrow">→</div>
+  <div class="chain-node node-dusty">Shifting<br>Dating Markets</div>
+  <div class="chain-arrow">→</div>
+  <div class="chain-node node-wine">Reactionary<br>Violence</div>
+</div>
+<h2 id="introduction" class="anchored">Introduction</h2>
+<p class="drop-cap">
+The “male loneliness epidemic” refers to a measurable, worsening collapse in men’s social connection: their friendships, intimate relationships, community ties, and sense of belonging. While loneliness is a universal human experience, researchers and public health officials have increasingly identified men, particularly young men in the United States, as a uniquely vulnerable population. The former U.S. Surgeon General Dr.&nbsp;Vivek Murthy warned that loneliness is associated with a reduction in lifespan comparable to smoking fifteen cigarettes a day. Yet the crisis, when examined closely, is neither as simple nor as gender-exclusive as its most prominent narratives suggest.
+</p>
+<p>The male loneliness epidemic does not exist in isolation. It sits at the center of a web of interconnected social crises, each compounding the others: declining birth rates, the erosion of reproductive rights, rising rates of gender-based violence, and a deepening estrangement between men and women. These are not separate conversations. They are chapters of the same story, and understanding them requires resisting the temptation to read any one of them alone.</p>
+<p>What makes this moment particularly urgent is that these crises are now feeding one another in measurable ways. Rising male social isolation correlates with shifting dating preferences among women who are increasingly opting out of heterosexual partnership, not as a lifestyle aesthetic but as a rational response to asymmetric emotional labor, reproductive risk, and the documented threat of intimate partner violence. Those shifts are producing measurable downstream effects on birth rates. And the legislative dismantling of reproductive rights has introduced a new coercive layer that makes the stakes of heterosexual intimacy structurally higher for women at precisely the moment when male relational capacity is at its lowest recorded point.</p>
+<div class="stat-grid">
+  <div class="stat-box clay">
+    <span class="stat-number">15%</span>
+    <span class="stat-label">of men report no close friends in 2021, up from 3% in 1990</span>
+    <span class="stat-source">AEI / Survey Center on American Life</span>
+  </div>
+  <div class="stat-box wine">
+    <span class="stat-number">2,412</span>
+    <span class="stat-label">females killed by males in single-victim incidents in 2023</span>
+    <span class="stat-source">Violence Policy Center</span>
+  </div>
+  <div class="stat-box sage">
+    <span class="stat-number">1.6</span>
+    <span class="stat-label">births per woman in 2024, the lowest ever recorded in the U.S.</span>
+    <span class="stat-source">CDC / Johns Hopkins</span>
+  </div>
+  <div class="stat-box slate">
+    <span class="stat-number">55%</span>
+    <span class="stat-label">of men agree a partner deserves to know where she is at all times, up from 46% in 2017</span>
+    <span class="stat-source">Equimundo 2025</span>
+  </div>
+</div>
+
+<div class="media-block">
+  <div class="media-label">🎧 Recommended Listening: NPR — It's Been a Minute on the Male Loneliness Epidemic</div>
+  <p style="font-family:var(--font-mono); font-size:0.75rem; color:var(--ink-mid); margin:0.5rem 0 0;">
+    <a href="https://www.npr.org/2024/05/09/1263527043/male-loneliness-epidemic-men-friendship" target="_blank" rel="noopener">
+      Listen at npr.org →
+    </a>
+    &nbsp;·&nbsp; Episode: "The male loneliness epidemic and what to do about it"
+  </p>
+  <p class="media-caption" style="margin-top:0.6rem;">The male loneliness conversation spread largely because it became conflated with singleness, and that conflation obscures the actual problem. Men made up nearly 80% of the U.S. suicide rate in 2022, a figure that points to something graver than lonliness in the colloquial sense. Source: NPR, It's Been a Minute.</p>
+</div>
+<div class="viz-block">
+<iframe src="https://www.npr.org/player/embed/1263527043/1266497419" style="width: 100%; height: 290px;" frameborder="0" scrolling="no" title="NPR embedded audio player">
+</iframe>
+</div>
+<h2 id="the-1992-convergence" class="anchored">The 1992 Convergence</h2>
+<p>This analysis is anchored in 1992, a year that represents a meaningful convergence of events that together constitute a legible starting point for the specific intersection of crises examined here. The decades prior are the soil. This analysis begins when the crop became visible.</p>
+<div class="timeline">
+  <div class="timeline-item">
+    <div class="tl-year">1992: Planned Parenthood v. Casey</div>
+    <p>The Supreme Court reaffirmed abortion rights but replaced the trimester framework with an "undue burden" standard, a doctrinal weakening that opened the door to state-level restrictions and signaled that Roe was contestable in ways that would define the next three decades. The term "femicide" was formally theorized the same year: Radford and Russell's landmark volume <em>Femicide: The Politics of Woman Killing</em> established the definitional framework public health researchers would draw on for thirty years.</p>
+  </div>
+  <div class="timeline-item">
+    <div class="tl-year">1994: Violence Against Women Act</div>
+    <p>VAWA provided federal funds for shelters, legal aid, and crisis interventions. The fact that this legislation was necessary is itself a data point: gender-based violence was already catastrophic and present in American homes in epidemic proportions for decades before receiving federal attention. As many as one in four women in the United States are victims of domestic violence, a figure thought to be significantly underreported, with domestic and family violence affecting an estimated ten million people in the United States every year.</p>
+  </div>
+  <div class="timeline-item">
+    <div class="tl-year">1990 to 2021: The Male Friendship Recession</div>
+    <p>The percentage of men reporting no close friends rose from 3% to 15%, a historically unprecedented collapse in male friendship networks over a single generation. This was not individual circumstance. It was the beginning of a structural divergence in how men and women built and maintained social networks across their lifetimes, with consequences that would compound over the following three decades.</p>
+  </div>
+</div>
+<h2 id="social-infrastructure-infographic" class="anchored">Social Infrastructure Infographic</h2>
+<div class="image-gallery">
+  <img src="images/infographic.png" alt="U.S. Surgeon General: Factors That Can Shape Social Connection" class="img-medium">
+  <p class="media-caption">Source: Office of the U.S. Surgeon General. Social connection is shaped by factors at the individual, relationship, community, and societal levels, all of which have deteriorated unevenly for men over the study period.</p>
+</div>
+<p>Developmental psychologist Angelica Ferrara, whose forthcoming book <em>Men Without Men</em> examines these patterns through a feminist lens, offers a structural diagnosis: patriarchal virtues of stereotypic masculinity, including hyper-independence, stoicism, strength, and control, inhibit the forming of friendships between men. These qualities, treated as virtues, manifest into severe social isolation with consequences including suicide risk, depression, stress-related death, and, for men specifically, increased rates of domestic violence and incarceration.</p>
+<div class="image-gallery">
+  <img src="images/Ferrara.png" alt="Ferrara: men's isolation as product of patriarchy" class="img-large">
+</div>
+<p>The structural consequence is that men who lack horizontal friendships, those with peers rather than dependents, arrive in intimate relationships carrying the full weight of their unmet social and emotional needs. Research established that men are equally as likely as women to reach out to their spouse or partner for emotional support, but far less likely to reach out to family or friends, leaving partnered women usually responsible for the entirety of their male partner’s emotional support needs, and leaving men with practically no support system if that relationship ends.</p>
+<h2 id="social-connection-and-support-systems" class="anchored">Social Connection and Support Systems</h2>
+<div class="column-page">
+<iframe src="https://ourworldindata.org/grapher/who-americans-spend-their-time-with?tab=line" loading="lazy" style="width: 100%; height: 600px; border: 0px none;" allow="web-share; clipboard-write">
+</iframe>
+</div>
+<div class="image-gallery" style="margin-top: 40px;">
+<p><img src="images/pewresearch.png" alt="Pew Research: Social Support Sources" style="width:100%; max-width:800px; height:auto; border:1px solid #ddd8d2; border-radius:4px;"></p>
+<p class="media-caption" style="font-size: 0.8em; margin-top: 10px; color: #888;">
+<strong>Analysis:</strong> Women are more likely than men to turn to friends, family, and mental health professionals for emotional support. Men rely almost exclusively on a spouse or partner, leaving them with practically no support system if that relationship ends. <br>Source: Pew Research Center, “Men, Women and Social Connections,” September 2024.
+</p>
+</div>
+<p>The landmark 2025 Pew Research Center survey of 6,204 U.S. adults found that men do not report feeling lonely more often than women; however, men turn to their networks far less often for emotional support. As Pew’s director of social trends research Kim Parker put it: <em>“Even if men aren’t feeling lonely more often than women, when they do feel that they need support, they may not be getting it to the extent that women are.”</em></p>
+<h2 id="isolation-dating-markets-and-reactionary-violence" class="anchored">Isolation, Dating Markets, and Reactionary Violence</h2>
+<p>The connection between male social isolation and violence is not simply that lonely men become dangerous. The pathway is more specific and more structural than that. Developmental psychologist Niobe Way identifies the mechanism: men socialized to suppress emotional need do not eliminate that need. They displace it, concentrating everything they cannot get from friendships, family, or community into a single intimate relationship. When that relationship is threatened or fails, the psychological stakes are not proportional to the loss of one person. They are proportional to the loss of everything.</p>
+<blockquote>
+<p>Reaching out is a soft skill. It suggests that you have needs, so men are definitely going to have a hard time reaching out. They have been taught by our culture that it is not only girly, it is lame.</p>
+<cite>Niobe Way, researcher, via NPR and Greater Good</cite>
+</blockquote>
+<p>This dynamic intersects with a measurable shift in women’s dating preferences that has accelerated substantially since 2020. The Equimundo 2025 State of American Men report found that 55% of men now endorse the belief that a boyfriend or husband deserves to know where his partner is at all times, up from 46% in 2017. Researchers in the domestic violence field consistently identify this belief as a marker of coercive controlling behavior, and coercive control is the strongest known predictor of intimate partner femicide. The trend is moving in the wrong direction, and women are responding rationally.</p>
+<p>An April 2024 Pew study found that never-married women were nearly three times as likely as never-married men to associate with the Democratic Party. This political divergence reflects and reinforces a values divergence: women who prioritize bodily autonomy, safety, and equitable partnership are less likely to find those values matched in men who score high on endorsement of controlling relationship behaviors. The dating market is not simply tightening; it is bifurcating along a values axis that correlates strongly with the very risk factors researchers use to predict intimate partner violence.</p>
+<div class="image-gallery">
+  <img src="images/vogue.png" alt="Vogue Opinion: Is Having a Boyfriend Embarrassing Now? by Chanté Joseph, October 2025" class="img-medium">
+  <p class="media-caption">Chanté Joseph's viral Vogue op-ed (October 2025) crystallized a cultural shift years in the making: being single has become a status symbol while being in a relationship is branded as politically uncool. What was being described was not a trend or an aesthetic. It was a values divergence now deep enough to function as a structural barrier to partnership formation.</p>
+</div>
+<p>The manosphere has filled the explanatory vacuum left by that divergence with a framework that converts male romantic rejection into political grievance. The Equimundo 2023 State of American Men report found that 40% of all participants, regardless of age group, said they trust one or more “men’s rights,” anti-feminist, or pro-violence voices from the manosphere. This is not fringe behavior. It is a mainstream sociological phenomenon in which male social isolation, romantic failure, and economic precarity are reframed as the deliberate injuries of a feminist political project rather than as symptoms of structural conditions that harm men and women alike.</p>
+<p>The downstream consequence of that reframing is not merely ideological. When men interpret women’s rational preference for safer, more emotionally available partners as a personal or political attack, the risk of reactionary violence, violence understood as a reassertion of masculine status and control, increases. The research is consistent on this point. The precarious manhood literature, particularly the 2025 cross-cultural study by Upton, Vandello, Kubicki, and colleagues covering sixty countries, found that country-level endorsement of the belief that manhood is fragile and must be constantly defended predicted rates of intimate partner violence and rape even after controlling for standard masculinity measures.</p>
+<h2 id="declining-birth-rates-and-the-partnership-calculus" class="anchored">Declining Birth Rates and the Partnership Calculus</h2>
+<div class="image-gallery">
+  <img src="images/US-baby-boom-wwii.png" alt="Our World in Data: US birth rates, 1920 to 2024" class="img-medium">
+  <p class="media-caption">U.S. birth rates surged after World War II (the baby boom, 1946 to 1964) and have declined nearly continuously since. By 2024 the U.S. recorded its lowest-ever fertility rate of 1.6 births per woman. Source: Colby and Ortman (2014); Human Mortality Database (2024); UN World Population Prospects (2024). Via Our World in Data, Saloni Dattani. CC-BY.</p>
+</div>
+<p>The U.S. general fertility rate has fallen nearly 23% since 2007. By 2024, the U.S. recorded its lowest-ever fertility rate of 1.6 births per woman, and the 2025 data extended that record further. Several long-term factors contributed, including increased educational attainment among women, delays in marriage, and a sustained drop in the teen birth rate. These were not pathologies. They were indicators of women’s expanding autonomy and increasing access to economic independence outside of partnership and motherhood.</p>
+<p>But beneath those structural explanations lies a more specific and more troubling dynamic. When women are asked directly why they are not forming partnerships or having children, a consistent theme emerges: the cost-benefit calculus of heterosexual partnership has shifted. The emotional labor asymmetry documented by Pew, the coercive controlling attitudes documented by Equimundo, and the femicide data published annually by the Violence Policy Center are not abstract statistics to women navigating real relationships. They are the lived conditions that make partnership feel like an elevated risk rather than a mutual benefit.</p>
+<p>The OECD’s 2025 analysis of social connection across member countries confirms the gendered deterioration: men and young people have seen some of the largest deteriorations in social connection in recent years. The OECD also found that loneliness is linked to an estimated 871,000 deaths annually globally. Young women are not leaving the dating market because they have stopped wanting connection. They are leaving because the available terms of connection, as shaped by male socialization, political conditions, and legal frameworks, have become measurably more dangerous and less reciprocal.</p>
+<h3 id="delayed-motherhood-and-demographic-shifts" class="anchored">Delayed Motherhood and Demographic Shifts</h3>
+<div class="column-page">
+<iframe src="https://ourworldindata.org/grapher/children-per-woman-un?tab=map" loading="lazy" style="width: 100%; height: 600px; border: 0px none;" allow="web-share; clipboard-write">
+</iframe>
+</div>
+<p>When women are asked directly why they are not forming partnerships or having children, a consistent theme emerges: the cost-benefit calculus of heterosexual partnership has shifted. The emotional labor asymmetry documented by Pew, the coercive controlling attitudes documented by Equimundo, and the femicide data published annually by the Violence Policy Center are not abstract statistics to women navigating real relationships. They are the lived conditions that make partnership feel like an elevated risk rather than a mutual benefit.</p>
+<p>Another measurable indicator of that gap is the rising age at which women are having children. As partnership formation becomes more selective, and as women spend more of their early adulthood in education and career rather than early marriage, the average age of mothers at first birth has increased substantially. The following chart from Our World in Data illustrates this shift across countries and over time.</p>
+<h2 id="legislative-shifts-and-gender-based-antagonism" class="anchored">Legislative Shifts and Gender-Based Antagonism</h2>
+<p>The June 2022 <em>Dobbs v. Jackson Women’s Health Organization</em> decision did not arrive in a vacuum. It was the culmination of a thirty-year legislative and judicial strategy, traceable directly to the doctrinal opening created by <em>Planned Parenthood v. Casey</em> in 1992, and it landed at the precise moment when every other indicator in this analysis was already deteriorating.</p>
+<div class="finding-box caution">
+  <div class="finding-label">The Dobbs Effect on Dating Markets</div>
+  <p>In states with abortion bans, reproductive coercion gained powerful structural reinforcement: intentional impregnation as a control tactic could no longer be remedied by abortion, transforming pregnancy itself into a potential instrument of entrapment. Researchers who study coercive control identify unintended pregnancy as a central mechanism of partner entrapment in abusive relationships. Dobbs did not create that mechanism. It removed the most effective escape from it. </p>
+</div>
+<p>Harvard public policy professor Sarah Wald wrote immediately after the ruling that the Dobbs decision degrades equality before the law, as half the population now does not have constitutionally protected rights to bodily autonomy and medical freedom. Constitutional scholar Laurence Tribe described it as a devastating blow to the implied right to privacy and to the idea that the Constitution was not frozen in the early nineteenth century.</p>
+<p>The implications for heterosexual partnership dynamics were immediate and documented. In states with abortion bans, women who are already navigating relationships with partners who score high on coercive control indicators now face a legal environment that transforms pregnancy from a condition that can be remedied into one that cannot. One in three women now live in states where abortion is not accessible. In the first few months after Roe was overturned, eighteen states banned or severely restricted abortion.</p>
+<p>The gendered antagonism this has produced is measurable and escalating. The political polarization between young men and young women in the United States is now wider than at any point in the recorded history of survey data. It is not merely a political divergence; it is a cultural divergence that is reshaping who forms partnerships with whom, under what conditions, and with what expectations about safety and reciprocity. Declining birth rates are one downstream consequence. Rising gender-based antagonism in online spaces, documented in the CNN investigation of early 2026, is another.</p>
+<div class="pull-quote">
+<p>"In states with abortion bans, pregnancy has been transformed from a condition that can be remedied into one that cannot; making the stakes of heterosexual intimacy measurably higher for women at exactly the moment when male relational capacity is at its lowest recorded point."</p>
+</div>
+<h2 id="analysis-does-the-data-support-the-narrative" class="anchored">Analysis: Does the Data Support the Narrative?</h2>
+<div class="finding-box">
+  <div class="finding-label">Summary Finding</div>
+  <p>The data offers suggestive but inconsistent support for the hypothesis that male social disconnection is linked to rising domestic violence homicide. The findings are partially consistent with the theoretical framework but not confirmatory of it. The most robust finding in this dataset concerns scope rather than causation: femicide-only analyses systematically miss nearly half of all domestic violence homicide victims.</p>
+</div>
+<p>The strongest signal in favor of the narrative: <strong>men living alone</strong> shows a statistically significant positive association with intimate partner femicide. Social isolation removes external accountability mechanisms, concentrates emotional dependency within a single relationship, and intensifies the coercive dynamics the domestic violence literature consistently identifies as femicide precursors.</p>
+<p>The most direct loneliness test, <strong>men with no close friends</strong> versus total DV homicide, returns a null result. This does not disprove the hypothesis. It means the data assembled here cannot confirm it, in part because the friendship series is itself interpolated from only seven survey data points across thirty-one years, severely limiting statistical power.</p>
+<p>The unemployment rate results are complicated by shared secular trends. Both femicide and unemployment have declined over the long run of the study period, but at different rates and rhythms, meaning aggregate correlations are likely artifacts of trend direction rather than causal relationships. The period-based Great Recession comparison is more reliable and does show a localized increase in DV homicide consistent with economic stress theory.</p>
+<table class="data-table caption-top" data-quarto-postprocess="true">
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th">Predictor</th>
+<th data-quarto-table-cell-role="th">Outcome</th>
+<th data-quarto-table-cell-role="th">Direction</th>
+<th data-quarto-table-cell-role="th">Significance</th>
+<th data-quarto-table-cell-role="th">Interpretation</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Unemployment rate</td>
+<td>IP femicide</td>
+<td class="negative">Negative</td>
+<td class="sig">Significant</td>
+<td>Likely secular trend artifact; recession periods show localized uptick</td>
+</tr>
+<tr class="even">
+<td>Men living alone %</td>
+<td>Total DV homicide</td>
+<td class="negative">Negative</td>
+<td class="sig">Significant</td>
+<td>Composition effect: fewer household victims when men live alone</td>
+</tr>
+<tr class="odd">
+<td>Men living alone %</td>
+<td>IP femicide</td>
+<td class="positive">Positive</td>
+<td class="sig">Significant</td>
+<td>Consistent with isolation-to-IPV literature</td>
+</tr>
+<tr class="even">
+<td>Men w/ no friends %</td>
+<td>Total DV homicide</td>
+<td>Mixed</td>
+<td class="ns">ns</td>
+<td>Null result: most direct loneliness test; weak instrument (7 survey points)</td>
+</tr>
+<tr class="odd">
+<td>Unemployment rate</td>
+<td>DV murder-suicide</td>
+<td class="negative">Negative</td>
+<td class="ns">ns</td>
+<td>Direction consistent with theory; below significance threshold</td>
+</tr>
+</tbody>
+</table>
+<h3 id="static-graphic-1-dv-homicide-ecosystem" class="anchored">Static Graphic 1: DV Homicide Ecosystem</h3>
+<div class="viz-block">
+  <div class="viz-label">Static Visualization 1 of 2 — Matplotlib · Seaborn</div>
+  <img src="dv_homicide_analysis.png" alt="DV Homicide Ecosystem stacked by victim type, US 1996 to 2023" style="width:100%; border:1px solid #ddd8d2; border-radius:4px;">
+  <p class="media-caption">Femicide is the largest single component of domestic violence homicide but represents approximately 50 to 55% of the total ecosystem. Femicide-only analyses miss nearly half of all DV homicide victims. The IP sex ratio panel confirms women are consistently 3 to 4 times more likely to be killed by an intimate partner than men across 1996 to 2023. Source: VPC; BJS; CDC; BLS.</p>
+</div>
+<h3 id="static-graphic-2-international-comparison" class="anchored">Static Graphic 2: International Comparison</h3>
+<div class="viz-block">
+  <div class="viz-label">Static Visualization 2 of 2 — Matplotlib · Seaborn</div>
+  <img src="dv_international_comparison.png" alt="IP homicide rate international comparison" style="width:100%; border:1px solid #ddd8d2; border-radius:4px;">
+  <p class="media-caption">The United States intimate partner homicide rate per 100,000 population consistently exceeds comparable peer nations. Source: UNODC via OWID; World Bank.</p>
+</div>
+<h3 id="interactive-graphic-1-dv-ecosystem-time-series" class="anchored">Interactive Graphic 1: DV Ecosystem Time Series</h3>
+<div class="viz-block column-page" style="max-width: 1000px;">
+<div style="position: relative; width: 100%; height: 0; padding-bottom: 50%; overflow: hidden; border-radius: 4px; border: 1px solid var(--rule); background: var(--paper-warm);">
+<p><iframe src="interactive_dv_timeseries.html" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;" title="Interactive Time Series"></iframe></p>
+</div>
+<div class="media-caption">
+Source: VPC; BJS; CDC. Hover for detailed data points.
+</div>
+</div>
+<h3 id="interactive-graphic-2-scatter-with-dropdown" class="anchored">Interactive Graphic 2: Scatter with Dropdown</h3>
+<div class="viz-block column-page" style="max-width: 1000px;">
+<div style="position: relative; width: 100%; height: 0; padding-bottom: 50%; overflow: hidden; border-radius: 4px; border: 1px solid var(--rule);">
+<p><iframe src="Interactive_dv_scatter.html" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;" title="Interactive Scatter Plot"></iframe></p>
+</div>
+<div class="media-caption">
+Source: Integrated Census and BJS datasets.
+</div>
+</div>
+<h3 id="linked-view-dv-ecosystem-dashboard" class="anchored">Linked View: DV Ecosystem Dashboard</h3>
+<div class="viz-block column-page" style="max-width: 1100px;">
+<div style="position: relative; width: 100%; height: 0; padding-bottom: 56.25%; overflow: hidden; border-radius: 4px; border: 1px solid var(--rule); background: var(--paper-warm);">
+<p><iframe src="linked_view_dv.html" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;" title="Linked Dashboard"></iframe></p>
+</div>
+<div class="media-caption">
+Source: VPC; BJS; AEI/SCAL; US Census. Integrated Dashboard View.
+</div>
+</div>
+<h2 id="covid-19-dobbs-and-compounding-crises" class="anchored">COVID-19, Dobbs, and Compounding Crises</h2>
+<p>COVID-19 arrived in 2020 and stress-tested every social system simultaneously. For men, lockdown eliminated the last remnants of in-person social infrastructure that had been quietly declining for decades. For women, it created a crisis of an entirely different order. On a typical day in the United States, twenty thousand phone calls are placed to domestic violence hotlines. During the pandemic those numbers surged globally as women were trapped with abusive partners, escape routes severed and institutional access cut off.</p>
+<p>Research by Lewis and colleagues documented the collateral effects of COVID-19 stay-at-home orders specifically on violence against women in the United States from January 2019 to December 2020, finding measurable increases in intimate partner violence in major cities and nationally. The pandemic did not create the conditions for that violence. It intensified conditions that already existed, and it did so by replicating the exact social arrangement that the isolation literature identifies as highest risk: enforced cohabitation between a socially isolated man and a woman with no access to outside support.</p>
+<div class="finding-box caution">
+  <div class="finding-label">Violence Policy Center 2025</div>
+  <p>More than 2,400 females were killed by males in 2023. Of those, 89.9% knew their killer and 57.1% were wives or intimate acquaintances, meaning nearly nine times as many females were murdered by a male they knew than by strangers. Firearms were used in 64.9% of cases, up substantially from 51% in 2011. Black females were murdered at a rate two and a half times that of white females. Indigenous women have higher rates of homicide victimization than all other ethnic groups.</p>
+</div>
+<p>A critical methodological note raised by researchers at Emory University and Sacred Heart University runs through all of this data: despite the high prevalence of female murder victimization in the United States, the U.S. lags behind other nations in defining and documenting gender-related female homicides, with deficient surveillance systems limiting efforts to estimate the annual incidence of femicide. The numbers we have are almost certainly undercounts, which makes the magnitude of what is already documented more significant, not less.</p>
+<h2 id="conclusion" class="anchored">Conclusion</h2>
+<div class="pull-quote">
+<p>"These crises did not cause each other in simple linear terms. They evolved together, within the same cultural and legal environment, shaping and being shaped by one another."</p>
+</div>
+<p>The male loneliness epidemic is real, but the data assembled here offers partial rather than confirmatory support for the hypothesis that male social disconnection independently drives domestic violence homicide. The most direct loneliness test returns a null result. The isolation-as-living-alone variable does correlate with femicide, but in ways entangled with secular trends and composition effects that require more sophisticated modeling to disentangle.</p>
+<p>What is confirmed: femicide-only analyses miss approximately 45 to 50% of domestic violence homicide victims. The intimate partner homicide sex ratio has remained at 3 to 4 women killed for every man killed across 1996 to 2023, and it has not narrowed. The 55% of men who now endorse controlling partner-location surveillance, up from 46% in 2017, represents a statistically significant trend in the direction researchers consistently identify as a femicide precursor.</p>
+<p>The connection between male social isolation, shifting dating markets, legislative shifts in reproductive rights, and escalating gender-based antagonism is not a conspiracy. It is a system. Male socialization produces men who are emotionally dependent on singular intimate relationships. Women who recognize the costs of those relationships, including emotional labor asymmetry, coercive control risk, and now reproductive entrapment in states with abortion bans, are responding by opting out of partnership or by raising the bar for entry. That rational response is being interpreted by some men, and by the ideological infrastructure of the manosphere, as a political attack rather than a preference. And some fraction of men who hold that interpretation will act on it violently, as the femicide data documents year after year.</p>
+<blockquote>
+<p>We claim our power fully only when we can speak the truth that we need men in our lives, that men are in our lives whether we want them to be or not, that we need men to challenge patriarchy, that we need men to change.</p>
+<cite>bell hooks, cited in Ferrara, <em>Men Without Men</em></cite>
+</blockquote>
+<p>Declining birth rates reflect a population losing confidence in the social conditions that make partnership and parenthood feel viable. The overturning of Roe reflects and reinforces the conditions that make heterosexual partnership structurally dangerous for women. And femicide reflects what happens when male emotional deprivation, rigid masculinity norms, legislative coercion, and relational desperation are left structurally unaddressed across generations. These crises did not cause each other. They grew in the same soil, and that is what makes solutions necessarily intersectional, long-term, and urgent.</p>
+<div class="ornament">· · ·</div>
+<hr>
+<h2 id="appendix-technical-methods" class="anchored">Appendix: Technical Methods</h2>
+<div class="finding-box note">
+  <div class="finding-label">Audience Note</div>
+  <p>This appendix assumes familiarity with statistical modeling, causal inference, and Python data science tooling. It documents the analytical decisions, limitations, and code architecture that do not fit naturally into the main narrative.</p>
+</div>
+<h3 id="a.1-data-sources-and-series-construction" class="anchored">A.1 Data Sources and Series Construction</h3>
+<p><strong>Intimate partner femicide (1996–2023).</strong> Sourced from the Violence Policy Center’s annual <em>When Men Murder Women</em> reports using FBI Supplementary Homicide Report data. The VPC methodology counts single-victim, single-offender female homicides by males and reports the subset involving intimate partners. This series likely undercounts true femicide by 15–30% relative to CDC NVDRS estimates because it excludes multi-offender and multi-victim incidents. The VPC series was chosen over NVDRS because NVDRS coverage only reaches full national scope from 2018 onward, making it unsuitable for a 1996–2023 time series.</p>
+<p><strong>Men killed by IP, family DV homicide, collateral victims (1996–2023).</strong> Derived from BJS <em>Homicide Trends in the United States</em> (NCJ 236018) proportional estimates, extended post-2008 using CDC WISQARS sex-disaggregated homicide data and published research on the proportion of male homicides attributable to intimate partners (approximately 10% based on CDC NISVS). These series carry substantially higher uncertainty than the VPC femicide counts and should be treated as indicative.</p>
+<p><strong>Male friendship decline.</strong> Seven survey data points from the Survey Center on American Life (AEI) spanning 1990–2021. Values were interpolated to annual frequency using index-based interpolation in pandas (<code>DataFrame.reindex().interpolate(method='index')</code>). This introduces substantial uncertainty, particularly for years far from observed data points. The interpolated series should not be used as a primary predictor in any regression model without acknowledging this limitation explicitly.</p>
+<p><strong>Men living alone.</strong> Decennial Census and American Community Survey data from the Census Bureau’s America’s Families and Living Arrangements tables. Interpolated using the same method. Higher reliability than the friendship series due to denser observation points.</p>
+<p><strong>OWID API access.</strong> Data were retrieved programmatically using:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>session <span class="op">=</span> requests.Session()</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>session.verify <span class="op">=</span> <span class="va">False</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>session.headers.update({<span class="st">"User-Agent"</span>: <span class="st">"Our World In Data data fetch/1.0"</span>})</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>PARAMS <span class="op">=</span> {<span class="st">"v"</span>: <span class="st">"1"</span>, <span class="st">"csvType"</span>: <span class="st">"full"</span>, <span class="st">"useColumnShortNames"</span>: <span class="st">"false"</span>}</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>url <span class="op">=</span> <span class="ss">f"https://ourworldindata.org/grapher/</span><span class="sc">{</span>slug<span class="sc">}</span><span class="ss">.csv"</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> pd.read_csv(StringIO(session.get(url, params<span class="op">=</span>PARAMS).text))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>A browser user-agent header is required. The default Python urllib user-agent returns HTTP 403. SSL verification is disabled to handle self-signed certificates in institutional network environments; this is a network configuration issue, not a code issue.</p>
+<h3 id="a.2-correlation-analysis" class="anchored">A.2 Correlation Analysis</h3>
+<p>Pearson r was computed for all variable pairs using <code>scipy.stats.pearsonr</code>. Confidence intervals were derived via Fisher z-transformation:</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>z    <span class="op">=</span> np.arctanh(r)</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>se   <span class="op">=</span> <span class="dv">1</span> <span class="op">/</span> np.sqrt(n <span class="op">-</span> <span class="dv">3</span>)</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>lo   <span class="op">=</span> np.tanh(z <span class="op">-</span> <span class="fl">1.96</span> <span class="op">*</span> se)</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>hi   <span class="op">=</span> np.tanh(z <span class="op">+</span> <span class="fl">1.96</span> <span class="op">*</span> se)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Spearman rank correlations were computed in parallel using <code>scipy.stats.spearmanr</code> to assess robustness to distributional assumptions. VIF was computed as <code>1 / (1 - r²)</code> for each predictor pair to assess multicollinearity.</p>
+<p><strong>Critical limitation:</strong> All series share secular time trends across the 1996–2023 study window. Without detrending, Pearson r between any two trending variables will be inflated regardless of causal relationship. The appropriate remediation approaches, in increasing order of rigor, are: first-differencing the series before correlation, including a year variable as a covariate in regression, or using a structural time series model that separates trend from cyclical components. None of these were applied to the primary analysis; the correlation results should be treated as descriptive and directional rather than inferential.</p>
+<h3 id="a.3-multicollinearity-assessment" class="anchored">A.3 Multicollinearity Assessment</h3>
+<p>The two primary isolation predictors are highly collinear:</p>
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th>Predictor pair</th>
+<th>Estimated r</th>
+<th>VIF</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Men living alone % vs.&nbsp;men with no close friends %</td>
+<td>~0.97</td>
+<td>~17</td>
+</tr>
+</tbody>
+</table>
+<p>VIF above 10 indicates severe multicollinearity. These two variables <strong>cannot</strong> be included simultaneously in any OLS regression. Remediation options: use only one predictor, construct a composite isolation index using PCA or factor analysis, or apply ridge regression. The main analysis uses them as alternative predictors. Future work should apply PCA to construct a single latent isolation factor from all available isolation indicators.</p>
+<h3 id="a.4-causal-inference-framework" class="anchored">A.4 Causal Inference Framework</h3>
+<p>The theoretical model is a mediated causal chain with a leading confounder:</p>
+<pre><code>Economic precarity (Z) ──→ Male isolation (X)
+Economic precarity (Z) ──→ IPV risk (Y)
+Male isolation (X) ──→ [Masculinity threat] ──→ [Coercive control] ──→ DV homicide (Y)</code></pre>
+<p>The critical identification problem: economic precarity is an unmeasured confounder at the aggregate level. Controlling for unemployment rate is insufficient because unemployment captures only one dimension of economic precarity. The true confound includes wage stagnation, housing cost burden, underemployment, and wealth inequality, none of which are included in this analysis.</p>
+<p>The mediating variables, masculinity threat perception and coercive controlling behavior, are not measured in any of the datasets used. Testing the mediation pathway requires individual-level longitudinal data with both isolation measures and behavioral measures. The Fragile Families and Child Wellbeing Study (used by Schneider, Harknett, and McLanahan 2016) is the most suitable existing dataset for this purpose.</p>
+<p><strong>Collision bias risk:</strong> Any analysis that restricts to men with prior DV records, men in shelters, or men who have been arrested for IPV conditions on a collider. Both isolation and economic precarity independently predict DV contact with the system; conditioning on DV system contact creates a spurious negative association between isolation and poverty within that sample.</p>
+<h3 id="a.5-visualization-architecture" class="anchored">A.5 Visualization Architecture</h3>
+<p>Static graphics were produced with <strong>matplotlib</strong> and <strong>seaborn</strong>. The causal chain panel uses <code>transform=ax.transAxes</code> for all text and annotation elements with <code>ax.set_xlim(0, 1)</code>, so axes fraction coordinates and data coordinates are identical. The original coordinate system mismatch (data coordinates <span class="math inline">0</span> to <span class="math inline">10</span> vs.&nbsp;axes fraction <span class="math inline">0</span> to <span class="math inline">1</span>) caused all chain nodes to collapse to the left edge of the figure.</p>
+<p>Interactive <strong>Plotly</strong> charts use <code>updatemenus</code> with explicit visibility arrays. <strong>Bokeh</strong> linked view uses a single <code>ColumnDataSource</code> shared across all panels with <code>RangeTool</code> applied to a navigator strip.</p>
+<p>For Quarto rendering, interactive charts are integrated via live <code>&lt;iframe&gt;</code> embeds using a <strong>CSS padding-ratio container</strong>. This architecture forces a cinematic rectangular aspect ratio (<span class="math inline">16 : 9</span> or <span class="math inline">21 : 9</span>) and allows visualizations to breakout into a <code>.column-page</code> width (<span class="math inline">1000<em>p</em><em>x</em></span>–<span class="math inline">1100<em>p</em><em>x</em></span>) while maintaining a standard <span class="math inline">740<em>p</em><em>x</em></span> body text column.</p>
+<p>To generate the required HTML assets for <strong>Plotly</strong>:</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Saves the interactive chart as a standalone HTML component</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> plotly.io <span class="im">as</span> pio</span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>pio.write_html(fig, </span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>                <span class="bu">file</span><span class="op">=</span><span class="st">"interactive_dv_scatter.html"</span>, </span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>                include_plotlyjs<span class="op">=</span><span class="st">'cdn'</span>, </span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>                full_html<span class="op">=</span><span class="va">False</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>For <strong>Bokeh</strong>:</p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Saves the linked dashboard as a standalone HTML component</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> bokeh.io <span class="im">import</span> output_file, save</span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>output_file(<span class="st">"linked_view_dv.html"</span>, title<span class="op">=</span><span class="st">"Dashboard"</span>)</span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>save(layout)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>To implement the <strong>Responsive Editorial Container</strong> in Quarto:</p>
+<div class="sourceCode" id="cb6"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>::: {.viz-block .column-page style="max-width: 1000px;"}</span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">div</span><span class="ot"> style</span><span class="op">=</span><span class="st">"position: relative; width: 100%; height: 0; padding-bottom: 50%; overflow: hidden; border-radius: 4px; border: 1px solid var(--rule);"</span><span class="dt">&gt;</span></span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>  <span class="dt">&lt;</span><span class="kw">iframe</span><span class="ot"> src</span><span class="op">=</span><span class="st">"filename.html"</span><span class="ot"> </span></span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a><span class="ot">          style</span><span class="op">=</span><span class="st">"position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;"</span><span class="dt">&gt;</span></span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>  <span class="dt">&lt;/</span><span class="kw">iframe</span><span class="dt">&gt;</span></span>
+<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;/</span><span class="kw">div</span><span class="dt">&gt;</span></span>
+<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a>:::</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<h3 id="a.6-recommended-next-steps-for-stronger-inference" class="anchored">A.6 Recommended Next Steps for Stronger Inference</h3>
+<ol type="1">
+<li><strong>Detrend all series</strong> using first-differencing or Hodrick-Prescott filter before computing correlations. This removes shared secular trends and tests the cyclical relationship between isolation and violence.</li>
+<li><strong>Construct a composite isolation index</strong> using PCA across all available isolation indicators (men living alone, men with no close friends, one-person households, time spent alone). This resolves multicollinearity and increases measurement validity.</li>
+<li><strong>Use individual-level data</strong> from the Fragile Families study, the NCVS longitudinal file, or the National Survey of Families and Households to test the mediation pathway through masculinity threat and controlling behavior.</li>
+<li><strong>Include reproductive rights variables</strong> as an additional predictor dimension. State-level variation in abortion access post-Dobbs provides a natural experiment for testing the effect of reproductive coercion risk on partnership formation and birth rates.</li>
+<li><strong>Apply interrupted time series analysis</strong> around the Great Recession (2008), COVID-19 (2020), and Dobbs (2022) as exogenous shocks to test whether these events produced measurable step changes in DV homicide rates above and beyond trend.</li>
+</ol>
+<div class="ornament">· · ·</div>
+<hr>
+<h2 id="ai-usage-log" class="anchored">AI Usage Log</h2>
+<p><strong>What AI was used for:</strong></p>
+<p><em>Quarto project structure.</em> Claude produced the initial <code>_quarto.yml</code>, <code>styles.css</code>, and <code>.qmd</code> file structures. The researcher directed the content organization, color scheme choices, and section sequencing. CSS variables and layout decisions were iteratively refined through researcher feedback.</p>
+<p><em>Debugging.</em> Claude diagnosed and resolved three technical issues: the matplotlib causal chain coordinate mismatch, the Quarto iframe rendering failure caused by Python kernel injection freezing the render, and the OWID API 403 error caused by the default Python urllib user-agent being blocked.</p>
+<p><em>Methodology and appendix.</em> The technical appendix was drafted by Claude based on the researcher’s analytical decisions and code. The researcher reviewed all statistical descriptions for accuracy.</p>
+<p><strong>What AI was not used for:</strong></p>
+<p>AI was not used to generate, impute, or fabricate any data values. AI was not used to make interpretive claims about the research findings. AI was not used to select which sources to cite or to verify the accuracy of citations. All primary source verification was done by the researcher.</p>
+<div class="ornament">· · ·</div>
+
+<footer style="text-align:center; font-family:var(--font-mono); font-size:0.65rem;
+                color:var(--ink-faint); padding:3rem 0 2rem; border-top:1px solid var(--rule);
+                margin-top:4rem; letter-spacing:0.08em; line-height:2.2;">
+  Data: Violence Policy Center · Bureau of Justice Statistics · Bureau of Labor Statistics ·
+  CDC WISQARS · US Census Bureau · UNODC via Our World in Data · AEI Survey Center · Equimundo · Pew Research Center<br>
+  Analysis period: 1996 to 2023 (data) · 1992 to 2026 (narrative scope)<br>
+  Visualizations: Python · Plotly · Bokeh · matplotlib · seaborn · Quarto<br>
+  AI assistance: Claude Sonnet 4.6 (Anthropic) · April 2026
+</footer>
+
+
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")
+    tabsets.forEach(function(tabset) {
+      const tabby = new Tabby('#' + tabset.id);
+    });
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+        const codeEl = trigger.previousElementSibling.cloneNode(true);
+        for (const childEl of codeEl.children) {
+          if (isCodeAnnotation(childEl)) {
+            childEl.remove();
+          }
+        }
+        return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'light-border',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+
+
+
+
+<script src="site_libs/quarto-html/zenscroll-min.js"></script>
+</body></html>
